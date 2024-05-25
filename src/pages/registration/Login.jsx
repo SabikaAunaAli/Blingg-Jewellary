@@ -76,6 +76,14 @@ function Login() {
                         placeholder='Password'
                     />
                 </div>
+
+                <div className="">
+                    <h3 className='text-center text-grey text-lg mb-4 font-bold'>For Admin Access: </h3>
+                        <p>email: storeadmin@gmail.com</p>
+                    <p>password: 123456</p>
+                </div>
+
+                
                 <div className=' flex justify-center mb-3'>
                     <button
                     onClick={login}
