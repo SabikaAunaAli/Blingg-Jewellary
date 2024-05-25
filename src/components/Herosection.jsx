@@ -8,7 +8,7 @@ function App() {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    navigate("/product");
+    navigate("/products");
   };
 
   return (
