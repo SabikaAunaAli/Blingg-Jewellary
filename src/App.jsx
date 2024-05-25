@@ -123,7 +123,7 @@ export const ProtectedRoute = ({ children }) => {
   if (user) {
     return children
   } else {
-    return <Navigate to={'/singup'} />
+    return <Navigate to={'/signup'} />
   }
 }
 
