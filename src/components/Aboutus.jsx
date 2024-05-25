@@ -12,7 +12,7 @@ export default function Aboutus() {
   return (
     <>
       <div className="container mx-auto my-10 px-10 flex-wrap h-fit flex  justify-between gap-4">
-        <div className=" flex flex-col justify-start gap-3 w-full lg:w-1/4">
+        <div className=" flex flex-col justify-start gap-3 w-full -mt-30 lg:-mt-0 lg:w-1/4">
           <h3 className="text-gray-400 text-xl font-bold mt-48 text-left">
             Unique Prices
           </h3>
