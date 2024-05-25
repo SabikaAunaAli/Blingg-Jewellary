@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@responsive {
+
+    @screen sm { /* 280px */
+      .absolute-top-6 {
+        top: 6px;
+        left:0;
+      }
+    }
+  
+    @screen md { /* 540px */
+      .absolute-top-6 {
+        top: 6px;
+        left:0;
+      }
+    }
+
+
+
+  }

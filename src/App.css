@@ -1,0 +1,8 @@
+.headerdiv {
+    z-index: 999!important;
+}
+
+body{
+    overflow-x: hidden;
+
+}
