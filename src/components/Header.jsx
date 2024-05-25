@@ -256,7 +256,7 @@ export default function Header() {
                 {user?.user?.email === 'storeadmin@gmail.com' ?
                   <Link to={'/dashboard'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300 " style={{ color: mode === 'dark' ? 'white' : '', }}>
                     Admin
-                  </Link> : <Link to={'/order'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300 " style={{ color: mode === 'dark' ? 'white' : '', }}>
+                  </Link> : <Link to={'/cart'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300 " style={{ color: mode === 'dark' ? 'white' : '', }}>
                     Order
                   </Link>}
 
