@@ -3,6 +3,8 @@ const Brace = [
         quantity:1,
         imageUrl:"https://websitedemos.net/blingg-jewelry-store-04/wp-content/uploads/sites/1119/2022/08/bracelet-01-b-300x375.jpg",
         title:"Bracelet - One",
+        description:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptate ",
         price:150,
 
     },

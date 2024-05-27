@@ -22,7 +22,11 @@ function Signup() {
     const signup = async () => {
         setLoading(true);
         if (name === "" || email === ""  || password === "") {
-            return toast.error("All fields are required")
+            return toast.error("All fields are required"
+                ,   {
+                    autoClose: 800
+                  }
+            )
         }
 
         try {
@@ -40,7 +44,9 @@ function Signup() {
             }
             const userRef = collection(fireDB, "users")
             await addDoc(userRef, user);
-            toast.success("Signup Succesfully")
+            toast.success("Signup Succesfully",   {
+                autoClose: 800
+              })
             setTimeout(() => {
                 window.location.href = '/login'
             }, 400);

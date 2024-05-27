@@ -76,7 +76,7 @@ export default function Desc() {
 
               <div>y
                 <h2 className="ml-5 mt-3 text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text font-bold text-3xl">
-                  {item.tittle}
+                  {item.title}
                 </h2>
                 <h2 className="text-transparent  bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text font-bold ml-5 mt-2 text-4xl pb-2">
                   {item.price ? `$ ${item.price}` : "Price not available"}

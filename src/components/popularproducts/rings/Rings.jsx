@@ -12,7 +12,7 @@ export default function Rings() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [showMessage, setShowMessage] = useState(false);
-  const containerRef = useRef(null); // Declaring containerRef
+  const containerRef = useRef(null); // Declaitem containerRef
 
   const handleClick = (id) => {
     navigate(`/desc/${id}`);
@@ -55,21 +55,21 @@ export default function Rings() {
           </i>
         </h3>
         <div className="cursor-pointer grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {rings.map((ring, index) => (
+          {rings.map((item, index) => (
             <div key={index} className="border-gray-400 border p-4 rounded-lg shadow-lg">
               <div className="overflow-hidden relative">
                 <img
-                  src={ring.imageUrl}
-                  alt={ring.title}
+                  src={item.imageUrl}
+                  alt={item.title}
                   className="w-full h-auto rounded hover:scale-125 transition-all ease-in-out object-left shadow-lg"
                 />
                 <div className="inline-block rounded-full shadow-lg font-bold p-2 pl-3 pr-3 pt-3 pb-3 border border-orange-500 absolute top-32 left-4 sm:top-4 sm:left-56 md:left-40 lg:left-40 xl:left-56 2xl:left-72 hover:border-gray-600 hover:text-orange-400 cursor-pointer">
-                <Link to={`/desc/${ring.id}`}>
-                    <FaEye onClick={() => handleClick(ring.id)} />
+                <Link to={`/desc/${item.id}`}>
+                    <FaEye onClick={() => handleClick(item.id)} />
                   </Link>
                 </div>
                 <div className="rounded-full shadow-lg font-bold p-2 pl-3 pr-3 pt-3 pb-3 border border-orange-500 absolute top-20 left-4 sm:top-16 sm:left-56 md:left-40 lg:left-40 xl:left-56 2xl:left-72 hover:border-gray-600 hover:text-orange-400 cursor-pointer">
-                  <FaShoppingCart onClick={() => addProductToCart(ring)} />
+                  <FaShoppingCart onClick={() => addProductToCart(item)} />
                 </div>
                 <div className="inline-block rounded-full shadow-lg font-bold p-2 pl-3 pr-3 pt-3 pb-3 border bg-white border-orange-500 absolute top-3 left-3">
                   sale
@@ -77,10 +77,10 @@ export default function Rings() {
               </div>
               <div className="mt-2">
                 <h2 className="text-lg text-orange-500 text-center font-semibold">
-                  {ring.title}
+                  {item.title}
                 </h2>
                 <p className="text-transparent text-2xl bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text font-bold text-center">
-                 $ {ring.price}
+                 $ {item.price}
                 </p>
               </div>
             </div>

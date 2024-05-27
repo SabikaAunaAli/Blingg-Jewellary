@@ -1,7 +1,7 @@
 // import React, { useContext, useState } from "react";
 // import myImage from "../assets/logo-regular.png";
 // import { FaShoppingCart } from "react-icons/fa";
-// import { Link } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 // import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 // import { useSelector } from "react-redux";
 // import { useNavigate } from "react-router-dom";
@@ -79,24 +79,24 @@
 
 //             <div className=" w-1/4  hidden lg:flex">
 //             <ul className="flex justify-center text-decoration-none">
-//               <Link to="/">
+//               <NavLink to="/">
 //                 <li className="pl-3 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline  transition duration-300">
 //                   HOME
 //                 </li>
-//               </Link>
-//               <Link to="/about">
+//               </NavLink>
+//               <NavLink to="/about">
 //                 <li className="pl-3 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline  transition duration-300">
 //                   ABOUT
 //                 </li>
-//               </Link>
-//               <Link to="/contact">
+//               </NavLink>
+//               <NavLink to="/contact">
 //                 <li className="pl-3 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline  transition duration-300">
 //                   CONTACT
 //                 </li>
-//               </Link>
+//               </NavLink>
              
              
-//                 <Link to="/cart">
+//                 <NavLink to="/cart">
 //                 <li className="flex">
 //                   <FaShoppingCart
 //                     onClick={navigateToCart}
@@ -107,7 +107,7 @@
 //                     {items.length}
 //                   </span>
 //                   </li>
-//                 </Link>
+//                 </NavLink>
                
              
 //             </ul>
@@ -156,66 +156,66 @@
 
 
 
-//                 <Link to="/" onClick={toggleMenu}>
+//                 <NavLink to="/" onClick={toggleMenu}>
 //                   <li className="pl-3 p-5  hover:text-orange-400  cursor-pointer hover:underline transition duration-300">
 //                     HOME
 //                   </li>
-//                 </Link>
-//                 <Link to="/about" onClick={toggleMenu}>
+//                 </NavLink>
+//                 <NavLink to="/about" onClick={toggleMenu}>
 //                   <li className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300">
 //                     ABOUT
 //                   </li>
-//                 </Link>
-//                 <Link to="/contact" onClick={toggleMenu}>
+//                 </NavLink>
+//                 <NavLink to="/contact" onClick={toggleMenu}>
 //                   <li className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300">
 //                     CONTACT
 //                   </li>
-//                 </Link>
+//                 </NavLink>
               
-//                 <Link to="/rings" onClick={toggleMenu}>
+//                 <NavLink to="/rings" onClick={toggleMenu}>
 //                   <li className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300">
 //                     RINGS
 //                   </li>
-//                 </Link>
-//                 <Link to="/brace" onClick={toggleMenu}>
+//                 </NavLink>
+//                 <NavLink to="/brace" onClick={toggleMenu}>
 //                   <li className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300">
 //                     BRACELETS
 //                   </li>
-//                 </Link>
+//                 </NavLink>
 
-//                 <Link to="/earings" onClick={toggleMenu}>
+//                 <NavLink to="/earings" onClick={toggleMenu}>
 //                   <li className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300">
 //                     EARINGS
 //                   </li>
-//                 </Link>
-//                 <Link to="/necklace" onClick={toggleMenu}>
+//                 </NavLink>
+//                 <NavLink to="/necklace" onClick={toggleMenu}>
 //                   <li className="pl-3 p-5  hover:text-orange-400 cursor-pointer hover:underline transition duration-300">
 //                     NECKLACE
 //                   </li>
-//                 </Link>
+//                 </NavLink>
 //                 <li>
-//                   <Link to="/cart" onClick={toggleMenu}>
+//                   <NavLink to="/cart" onClick={toggleMenu}>
 //                     <FaShoppingCart
 //                      className="mx-auto text-2xl relative  text-center hover:text-orange-400 cursor-pointer transition duration-300"/>
 //                       <span className=" relative bottom-8 left-4 text-sm rounded-full  bg-red-500 p-1 w-6 h-6 text-white  text-center  ">
 //                        {items.length}
 //                      </span>
-//                   </Link>
+//                   </NavLink>
 //                 </li>
 //               </ul>
 //               <div className="flex flex-col ">
 
 
-//                 {user ? "" : <Link to={'/signup'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300" style={{ color: mode === 'dark' ? 'white' : '', }}>
+//                 {user ? "" : <NavLink to={'/signup'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300" style={{ color: mode === 'dark' ? 'white' : '', }}>
 //                   SIGNUP
-//                 </Link>}
+//                 </NavLink>}
 
 //                 {user?.user?.email === 'storeadmin@gmail.com' ?
-//                   <Link to={'/dashboard'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300 " style={{ color: mode === 'dark' ? 'white' : '', }}>
+//                   <NavLink to={'/dashboard'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300 " style={{ color: mode === 'dark' ? 'white' : '', }}>
 //                     Admin
-//                   </Link> : <Link to={'/order'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300 " style={{ color: mode === 'dark' ? 'white' : '', }}>
+//                   </NavLink> : <NavLink to={'/order'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300 " style={{ color: mode === 'dark' ? 'white' : '', }}>
 //                     Order
-//                   </Link>}
+//                   </NavLink>}
 
 
 //                 {user ? <a onClick={logout} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300  " style={{ color: mode === 'dark' ? 'white' : '', }}>
@@ -260,25 +260,25 @@
 //             </button>
 //           </li>
       
-//           <Link to="/allproducts">
+//           <NavLink to="/allproducts">
 //             <li className="pl-3 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline whitespace-nowrap transition duration-300 mr-4">
 //             ALL PRODUCTS
 //             </li>
-//           </Link>
+//           </NavLink>
        
-//         {user ? "" : <Link to={'/signup'} ><li className= "pl-3 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline  transition duration-300">
+//         {user ? "" : <NavLink to={'/signup'} ><li className= "pl-3 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline  transition duration-300">
 //           SIGNUP
 //         </li>
-//         </Link>}
+//         </NavLink>}
        
 //         {user?.user?.email === 'storeadmin@gmail.com' ?
-//           <Link to={'/dashboard'} ><li className="pl-3  mr-5 bg-black font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline  transition duration-300">
+//           <NavLink to={'/dashboard'} ><li className="pl-3  mr-5 bg-black font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline  transition duration-300">
 //           ADMIN
 //         </li>
-//           </Link> : <Link to={'/cart'} ><li className="pl-3  mr-5 bg-black font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline  transition duration-300">
+//           </NavLink> : <NavLink to={'/cart'} ><li className="pl-3  mr-5 bg-black font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline  transition duration-300">
 //           ORDER
 //         </li>
-//           </Link>}
+//           </NavLink>}
 //           {user ? <li onClick={logout} className="pl-3  mr-5 bg-black font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline  transition duration-300">
 //             LOGOUT
 //           </li>  : ""}
@@ -300,7 +300,7 @@
 import React, { useContext, useState } from "react";
 import myImage from "../assets/logo-regular.png";
 import { FaShoppingCart } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -378,34 +378,53 @@ export default function Header() {
 
             <div className="w-1/4 hidden lg:flex">
               <ul className="flex justify-center text-decoration-none">
-                <Link to="/">
-                  <li className="pl-3 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300">
+                <NavLink to="/"   
+                 className={({ isActive }) =>
+                    isActive
+                      ? "px-2 font-extrabold text-orange-300  scale-110 underline "
+                      : "px-2 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300"
+                  }>
+                  <li>
                     HOME
                   </li>
-                </Link>
-                <Link to="/about">
+                </NavLink>
+                <NavLink to="/about"
+                 className={({ isActive }) =>
+                  isActive
+                    ? "px-2 font-extrabold text-orange-300  scale-110 underline "
+                    : "px-2 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300"
+                }>
                   <li className="pl-3 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300">
                     ABOUT
                   </li>
-                </Link>
-                <Link to="/contact">
+                </NavLink>
+                <NavLink to="/contact"
+                 className={({ isActive }) =>
+                  isActive
+                    ? "px-2 font-extrabold text-orange-300  scale-110 underline "
+                    : "px-2 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300"
+                }>
                   <li className="pl-3 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300">
                     CONTACT
                   </li>
-                </Link>
+                </NavLink>
 
                 {user?.user?.email !== 'storeadmin@gmail.com' && (
-                  <Link to="/cart">
+                  <NavLink to="/cart"  className={({ isActive }) =>
+                    isActive
+                      ? "px-2 font-extrabold text-orange-500 "
+                      : "px-2 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300"
+                  }>
                     <li className="flex">
                       <FaShoppingCart
                         onClick={navigateToCart}
                         className="ml-5 text-2xl hover:text-orange-400 cursor-pointer transition duration-300"
                       />
-                      <span className="rounded-full bg-red-500 text-white w-6 h-6 text-center">
+                      <span className="rounded-full bg-red-500 text-white w-5 h-5 text-center">
                         {items.length}
                       </span>
                     </li>
-                  </Link>
+                  </NavLink>
                 )}
               </ul>
             </div>
@@ -432,7 +451,7 @@ export default function Header() {
               </div>
               <ul>
                 <li
-                  className="mr-5 inline-block text-xl cursor-pointer focus:outline-none"
+                  className="p-2 inline-block text-xl cursor-pointer focus:outline-none"
                   onClick={() => {
                     toggleMode();
                     toggleMenu();
@@ -447,87 +466,127 @@ export default function Header() {
                   </li>
                 </div>
 
-                <Link to="/" onClick={toggleMenu}>
-                  <li className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300">
+                <NavLink to="/" onClick={toggleMenu}  className={({ isActive }) =>
+                    isActive
+                      ? "px-2 font-extrabold text-orange-600  scale-125 underline "
+                      : "px-2 font-bold hover:text-white cursor-pointer hover:underline transition duration-300"
+                  }>
+                  <li >
                     HOME
                   </li>
-                </Link>
-                <Link to="/about" onClick={toggleMenu}>
-                  <li className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300">
+                </NavLink>
+                <NavLink to="/about" onClick={toggleMenu}  className={({ isActive }) =>
+                    isActive
+                      ? "px-2 font-extrabold text-orange-600   scale-110 underline "
+                      : "px-2 font-bold hover:text-white cursor-pointer hover:underline transition duration-300"
+                  }>
+                  <li >
                     ABOUT
                   </li>
-                </Link>
-                <Link to="/contact" onClick={toggleMenu}>
-                  <li className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300">
+                </NavLink>
+                <NavLink to="/contact" onClick={toggleMenu}  className={({ isActive }) =>
+                    isActive
+                      ? "px-2 font-extrabold text-orange-600   scale-110 underline "
+                      : "px-2 font-bold hover:text-white cursor-pointer hover:underline transition duration-300"
+                  }>
+                  <li >
                     CONTACT
                   </li>
-                </Link>
+                </NavLink>
 
-                <Link to="/rings" onClick={toggleMenu}>
-                  <li className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300">
+                <NavLink to="/rings" onClick={toggleMenu}  className={({ isActive }) =>
+                    isActive
+                      ? "px-2 font-extrabold text-orange-600   scale-110 underline "
+                      : "px-2 font-bold hover:text-white cursor-pointer hover:underline transition duration-300"
+                  }>
+                  <li >
                     RINGS
                   </li>
-                </Link>
-                <Link to="/brace" onClick={toggleMenu}>
-                  <li className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300">
+                </NavLink>
+                <NavLink to="/brace" onClick={toggleMenu}  className={({ isActive }) =>
+                    isActive
+                      ? "px-2 font-extrabold text-orange-600   scale-110 underline "
+                      : "px-2 font-bold hover:text-white cursor-pointer hover:underline transition duration-300"
+                  }>
+                  <li>
                     BRACELETS
                   </li>
-                </Link>
+                </NavLink>
 
-                <Link to="/earings" onClick={toggleMenu}>
-                  <li className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300">
+                <NavLink to="/earings" onClick={toggleMenu}  className={({ isActive }) =>
+                    isActive
+                      ? "px-2 font-extrabold text-orange-600   scale-110 underline "
+                      : "px-2 font-bold hover:text-white cursor-pointer hover:underline transition duration-300"
+                  }>
+                  <li >
                     EARINGS
                   </li>
-                </Link>
-                <Link to="/necklace" onClick={toggleMenu}>
-                  <li className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300">
+                </NavLink>
+                <NavLink to="/necklace" onClick={toggleMenu}  className={({ isActive }) =>
+                    isActive
+                      ? "px-2 font-extrabold text-orange-600   scale-110 underline "
+                      : "px-2 font-bold hover:text-white cursor-pointer hover:underline transition duration-300"
+                  }>
+                  <li >
                     NECKLACE
                   </li>
-                </Link>
+                </NavLink>
 
                 {user?.user?.email !== 'storeadmin@gmail.com' && (
                   <li>
-                    <Link to="/cart" onClick={toggleMenu}>
-                      <FaShoppingCart className="mx-auto text-2xl relative text-center hover:text-orange-400 cursor-pointer transition duration-300" />
-                      <span className="relative bottom-8 left-4 text-sm rounded-full bg-red-500 p-1 w-6 h-6 text-white text-center">
+                    <NavLink to="/cart" onClick={toggleMenu}  className={({ isActive }) =>
+                    isActive
+                      ? "px-2 font-extrabold text-orange-600 "
+                      : "px-2 font-bold hover:text-orange-600 bg-clip-text cursor-pointer"
+                  }>
+                      <FaShoppingCart className="mx-auto text-2xl relative text-center hover:text-white cursor-pointer transition duration-300" />
+                      <span className="relative bottom-8 left-4 text-sm rounded-full bg-red-500 px-1 w-5 text-white text-center">
                         {items.length}
                       </span>
-                    </Link>
+                    </NavLink>
                   </li>
                 )}
               </ul>
-              <div className="flex flex-col">
+              <div className="flex flex-col gap-5">
                 {user ? "" : (
-                  <Link to={'/signup'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  <NavLink to={'/signup'} onClick={toggleMenu}  className={({ isActive }) =>
+                    isActive
+                      ? "px-2 font-extrabold text-orange-600  scale-110 underline "
+                      : "px-2 font-bold hover:text-white cursor-pointer hover:underline transition duration-300"
+                  } style={{ color: mode === 'dark' ? 'white' : '' }}>
                     SIGNUP
-                  </Link>
+                  </NavLink>
                 )}
 
                 {user?.user?.email === 'storeadmin@gmail.com' ? (
-                  <Link to={'/dashboard'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  <NavLink to={'/dashboard'} onClick={toggleMenu} 
+                  className={({ isActive }) =>
+                    isActive
+                      ? "px-2 font-extrabold text-orange-600   scale-110 underline "
+                      : "px-2 font-bold hover:text-white cursor-pointer hover:underline transition duration-300"
+                  } style={{ color: mode === 'dark' ? 'white' : '' }}>
                     Admin
-<<<<<<< HEAD
-                  </Link>
-                ) : (
-                  <Link to={'/order'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  </NavLink>) 
+                  : <NavLink to={'/cart'} onClick={toggleMenu} 
+                  className={({ isActive }) =>
+                    isActive
+                      ? "p-2 font-extrabold text-orange-600  scale-110 underline "
+                      : "p-2 font-bold hover:text-white cursor-pointer hover:underline transition duration-300"
+                  } style={{ color: mode === 'dark' ? 'white' : '' }}>
                     Order
-                  </Link>
-                )}
-=======
-                  </Link> : <Link to={'/cart'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300 " style={{ color: mode === 'dark' ? 'white' : '', }}>
-                    Order
-                  </Link>}
+                  </NavLink>}
+
                 {user && (
-                <li onClick={toggleMenu} className="pl-3 mr-5 bg-black font-bold text-transparent text-black underline bg-clip-text cursor-pointer hover:underline transition duration-300">
+                <div onClick={toggleMenu} className="pl-3 mr-5 bg-black font-bold text-black underline bg-clip-text cursor-pointer hover:underline transition duration-300">
                   {user.user.email}
-                </li>
+                </div>
               )}
->>>>>>> 4d486a7c113b88105b13ab0a2405abed058b7c77
 
                 {user ? (
-                  <a onClick={logout} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                  <div onClick={logout}  className= "px-2 font-bold hover:text-orange-600 cursor-pointer hover:underline transition duration-300"
+                   style={{ color: mode === 'dark' ? 'white' : '' }}>
                     Logout
-                  </a>
+                  </div>
                 ) : ""}
               </div>
               <h3 className="text-center font-bold m-auto mt-5 pb-5 p-5">
@@ -554,7 +613,7 @@ export default function Header() {
           </div>
 
           {/* header cart */}
-          <ul className="hidden lg:flex">
+          <ul className="hidden lg:flex items-center align-middle">
             {/* Mode Switch */}
             <li className="hidden md:block ml-5">
               <button onClick={toggleMode} className="focus:outline-none">
@@ -566,32 +625,48 @@ export default function Header() {
               </button>
             </li>
 
-            <Link to="/allproducts">
+            <NavLink to="/allproducts"  className={({ isActive }) =>
+                    isActive
+                      ? "px-2 font-extrabold text-orange-300  scale-110 underline "
+                      : "px-2 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300"
+                  }>
               <li className="pl-3 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline whitespace-nowrap transition duration-300 mr-4">
                 ALL PRODUCTS
               </li>
-            </Link>
+            </NavLink>
 
             {user ? "" : (
-              <Link to={'/signup'}>
+              <NavLink to={'/signup'}  className={({ isActive }) =>
+                isActive
+                  ? "px-2 font-extrabold text-orange-300  scale-110 underline "
+                  : "px-2 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300"
+              }>
                 <li className="pl-3 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300">
                   SIGNUP
                 </li>
-              </Link>
+              </NavLink>
             )}
 
             {user?.user?.email === 'storeadmin@gmail.com' ? (
-              <Link to={'/dashboard'}>
+              <NavLink to={'/dashboard'}  className={({ isActive }) =>
+                isActive
+                  ? "px-2 font-extrabold text-orange-300  scale-110 underline "
+                  : "px-2 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300"
+              }>
                 <li className="pl-3 mr-5 bg-black font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300">
                   ADMIN
                 </li>
-              </Link>
+              </NavLink>
             ) : (
-              <Link to={'/cart'}>
+              <NavLink to={'/cart'}  className={({ isActive }) =>
+                isActive
+                  ? "px-2 font-extrabold text-orange-300  scale-110 underline "
+                  : "px-2 font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300"
+              }>
                 <li className="pl-3 mr-5 bg-black font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300">
                   ORDER
                 </li>
-              </Link>
+              </NavLink>
             )}
             {user ? (
               <li onClick={logout} className="pl-3 mr-5 bg-black font-bold hover:text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300">
@@ -600,7 +675,7 @@ export default function Header() {
             ) : ""}
 
             {user && (
-              <li className="pl-3 mr-5 bg-black font-bold text-transparent text-orange-400 bg-clip-text cursor-pointer hover:underline transition duration-300">
+              <li className=" text-xl  font-bold  text-orange-400 cursor-pointer hover:underline transition duration-300">
                 {user.user.email}
               </li>
             )}

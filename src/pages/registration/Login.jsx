@@ -22,7 +22,7 @@ function Login() {
             const result = await signInWithEmailAndPassword(auth,email,password);
             toast.success("Login successful", {
                 position: "top-right",
-                autoClose: 1000,
+                autoClose: 800,
                 hideProgressBar: true,
                 closeOnClick: true,
                 pauseOnHover: true,
@@ -37,7 +37,11 @@ function Login() {
         } catch (error) {
             console.log(error)
             setLoading(loading)
-            toast.error("Invalid User or password")
+            toast.error("Invalid User or password",
+            {
+                autoClose: 800
+              }
+            )
         }
 
     }

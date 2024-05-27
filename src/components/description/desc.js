@@ -259,3 +259,4 @@ const pro = [
   ];
 
 export default { rings, necklace, earings, Brace, pro, product };
+
