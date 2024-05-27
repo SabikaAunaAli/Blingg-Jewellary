@@ -11,6 +11,7 @@ import { useContext } from "react";
 import { useState } from "react";
 
 export default function Footer() {
+  const user = JSON.parse(localStorage.getItem('user'));
   const context = useContext(myContext);
   const { mode, toggleMode } = context;
   const items = useSelector((state) => state.cart);
@@ -74,14 +75,24 @@ export default function Footer() {
                   </li>
                 </Link>
 
-                <li className="pb-5 text-black font-semibold  text-center cursor-pointer  hover:text-orange-500">
+                {/* <li className="pb-5 text-black font-semibold  text-center cursor-pointer  hover:text-orange-500">
                   <Link to="/cart">
                     <FaShoppingCart className="mt-1  inline-block  text-2xl  hover:text-orange-400 cursor-pointer transition duration-300" />
                     <sup className="rounded-full bg-red-500 text-white p-1">
                       {items.length}
                     </sup>
                   </Link>
-                </li>
+                </li> */}
+                   {user?.user?.email !== 'storeadmin@gmail.com' && (
+                  <li>
+                    <Link to="/cart" onClick={toggleMenu}>
+                      <FaShoppingCart className="mx-auto text-2xl relative text-center hover:text-orange-400 cursor-pointer transition duration-300" />
+                      <span className="relative bottom-8 left-4 text-sm rounded-full bg-red-500 p-1 w-6 h-6 text-white text-center">
+                        {items.length}
+                      </span>
+                    </Link>
+                  </li>
+                   )}
               </ul>
             </div>
             {/* shop */}

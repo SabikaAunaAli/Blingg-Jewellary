@@ -46,7 +46,7 @@ export default function Necklace() {
           {necklace.map((necklace, index) => (
             <div key={index} className="border-gray-400 border p-4 rounded-lg shadow-lg">
               <div className="overflow-hidden relative">
-                <img src={necklace.imageUrl} alt={necklace.tittle} className="w-full h-auto rounded hover:scale-125 transition-all ease-in-out object-left shadow-lg" />
+                <img src={necklace.imageUrl} alt={necklace.title} className="w-full h-auto rounded hover:scale-125 transition-all ease-in-out object-left shadow-lg" />
                 <div className="inline-block rounded-full shadow-lg font-bold p-2 pl-3 pr-3 pt-3 pb-3 border border-orange-500 absolute top-32 left-4 sm:top-4 sm:left-56 md:left-40 lg:left-40 xl:left-56 2xl:left-72 hover:border-gray-600 hover:text-orange-400 cursor-pointer">
                   <Link to={`/desc/${necklace.id}`}>
                     <FaEye onClick={() => handleClick(necklace.id)} />
@@ -58,8 +58,8 @@ export default function Necklace() {
                 <div className="inline-block rounded-full shadow-lg font-bold p-2 pl-2 pr-2 pt-3 pb-3 border bg-white border-orange-500 absolute top-3 left-3">sale</div>
               </div>
               <div className="mt-2">
-                <h2 className="text-lg text-orange-500 text-center font-semibold">{necklace.tittle}</h2>
-                <p className="text-transparent text-2xl bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text font-bold text-center">{necklace.price}</p>
+                <h2 className="text-lg text-orange-500 text-center font-semibold">{necklace.title}</h2>
+                <p className="text-transparent text-2xl bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text font-bold text-center">${necklace.price}</p>
               </div>
             </div>
           ))}

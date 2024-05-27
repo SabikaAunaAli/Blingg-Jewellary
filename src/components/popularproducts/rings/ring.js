@@ -5,7 +5,7 @@ const rings = [
         title:"Ring - One",
         description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptate ",
-        price:1500,
+        price:150,
 
     },
     {   id:20,
@@ -14,7 +14,7 @@ const rings = [
         title:"Ring - Two",
            description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptate ",
-        price:1300,
+        price:100,
 
     },
     {   id:21,
@@ -23,7 +23,7 @@ const rings = [
         title:"Ring - Three", 
            description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptate ",                                                                                  
-        price:1500,
+        price:130,
 
     },
     {   id:22,
@@ -41,7 +41,7 @@ const rings = [
         title:"Ring - Five",
            description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptate ",
-        price:1700,
+        price:150,
 
     },
     {   id:24,

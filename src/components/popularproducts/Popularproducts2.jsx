@@ -65,16 +65,16 @@ export default function Popularproducts2() {
               <img
                 className="rounded shadow-lg h-64 w-96 hover:scale-125 -mt-24 transition-all ease-in-out"
                 src={productItem.imageUrl}
-                alt={productItem.tittle}
+                alt={productItem.title}
               />
 
          
           
             </div>
             <h3 className="text-orange-500 text-2xl font-semibold text-center pt-3">
-              {productItem.tittle}
+              {productItem.title}
             </h3>
-            <p className="mt-2 text-gray-400 font-bold text-center pb-1 ml-2">{productItem.productdesc}</p>
+            <p className="mt-2 text-gray-400 font-bold text-center pb-1 ml-2">{productItem.description}</p>
             <p className="text-transparent text-2xl bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text font-bold text-center pb-2">
               ${productItem.price}
             </p>

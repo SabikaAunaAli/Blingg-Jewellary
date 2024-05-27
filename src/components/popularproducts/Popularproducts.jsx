@@ -46,7 +46,7 @@ export default function Popularproducts() {
               <img
                 className="rounded shadow-lg hover:scale-125 transition-all w-full ease-in-out"
                 src={product.imageUrl}
-                alt={product.tittle}
+                alt={product.title}
               />
               <div className="inline-block rounded-full shadow-lg font-bold p-2 pl-3 pr-3 pt-3 pb-3 border border-orange-500 absolute  top-32 left-3 sm:top-4 sm:left-56 md:left-40 lg:left-40 xl:left-56   2xl:left-72   hover:border-gray-600 bg-white hover:text-orange-400 cursor-pointer">
               <Link to={`/desc/${product.id}`}>
@@ -58,9 +58,9 @@ export default function Popularproducts() {
               </div>
             </div>
             <h3 className="text-orange-500 text-2xl font-semibold text-center pt-3">
-              {product.tittle}
+              {product.title}
             </h3>
-            <p className="mt-2 text-gray-400 font-bold text-center pb-1 ml-2">{product.productdesc}</p>
+            <p className="mt-2 text-gray-400 font-bold text-center pb-1 ml-2">{product.description}</p>
             <p className="text-transparent text-2xl bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text font-bold text-center pb-2">
               ${product.price}
             </p>

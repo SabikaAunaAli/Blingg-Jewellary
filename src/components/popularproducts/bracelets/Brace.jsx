@@ -70,7 +70,7 @@ export default function Brace() {
                 <div className="overflow-hidden relative ">
                   <img
                     src={bracelet.imageUrl}
-                    alt={bracelet.tittle}
+                    alt={bracelet.title}
                     className="w-full h-auto rounded hover:scale-125 transition-all ease-in-out shadow-lg z-0"
                   />
               
@@ -89,10 +89,10 @@ export default function Brace() {
                 </div>
                 <div className="mt-2">
                   <h2 className="text-lg text-orange-500 text-center font-semibold">
-                    {bracelet.tittle}
+                    {bracelet.title}
                   </h2>
                   <p className="text-transparent text-2xl bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text font-bold text-center">
-                    {bracelet.price}
+                    ${bracelet.price}
                   </p>
                 </div>
               </div>

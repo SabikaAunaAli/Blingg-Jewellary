@@ -5,7 +5,7 @@ const earings = [
         title:"Earing - One",
         description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptate ",
-        price:1500,
+        price:105,
 
     },
     {   id:8,
@@ -14,7 +14,7 @@ const earings = [
         title:"Earing - Two",
         description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptate ",
-        price:1300,
+        price:130,
 
     },
     {   id:9,
@@ -23,7 +23,7 @@ const earings = [
         title:"Earing - Three",
         description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptate ",
-        price:1500,
+        price:150,
 
     },
     {   id:10,
@@ -41,7 +41,7 @@ const earings = [
         title:"Earing - Five",
         description:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptate ",
-        price:1700,
+        price:170,
 
     },
     {   id:12,
