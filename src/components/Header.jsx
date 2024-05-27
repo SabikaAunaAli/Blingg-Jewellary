@@ -259,6 +259,11 @@ export default function Header() {
                   </Link> : <Link to={'/cart'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300 " style={{ color: mode === 'dark' ? 'white' : '', }}>
                     Order
                   </Link>}
+                {user && (
+                <li onClick={toggleMenu} className="pl-3 mr-5 bg-black font-bold text-transparent text-black underline bg-clip-text cursor-pointer hover:underline transition duration-300">
+                  {user.user.email}
+                </li>
+              )}
 
 
                 {user ? <a onClick={logout} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300  " style={{ color: mode === 'dark' ? 'white' : '', }}>
