@@ -12,8 +12,8 @@ export default function Aboutus() {
   return (
     <>
       <div className="container mx-auto my-10 px-10 flex-wrap h-fit flex  justify-between gap-4">
-        <div className=" flex flex-col justify-start gap-3 w-full lg:w-1/4">
-          <h3 className="text-gray-400 text-xl font-bold mt-48 text-left">
+        <div className=" flex flex-col justify-start gap-3 w-full  lg:w-1/4">
+          <h3 className="text-gray-400 text-xl font-bold lg:mt-48 mt-5 text-left">
             Unique Prices
           </h3>
           <h2 className=" text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text font-bold text-6xl text-left mb-5">

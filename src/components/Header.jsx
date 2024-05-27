@@ -506,12 +506,23 @@ export default function Header() {
                 {user?.user?.email === 'storeadmin@gmail.com' ? (
                   <Link to={'/dashboard'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300" style={{ color: mode === 'dark' ? 'white' : '' }}>
                     Admin
+<<<<<<< HEAD
                   </Link>
                 ) : (
                   <Link to={'/order'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300" style={{ color: mode === 'dark' ? 'white' : '' }}>
                     Order
                   </Link>
                 )}
+=======
+                  </Link> : <Link to={'/cart'} onClick={toggleMenu} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300 " style={{ color: mode === 'dark' ? 'white' : '', }}>
+                    Order
+                  </Link>}
+                {user && (
+                <li onClick={toggleMenu} className="pl-3 mr-5 bg-black font-bold text-transparent text-black underline bg-clip-text cursor-pointer hover:underline transition duration-300">
+                  {user.user.email}
+                </li>
+              )}
+>>>>>>> 4d486a7c113b88105b13ab0a2405abed058b7c77
 
                 {user ? (
                   <a onClick={logout} className="pl-3 p-5 hover:text-orange-400 cursor-pointer hover:underline transition duration-300" style={{ color: mode === 'dark' ? 'white' : '' }}>
