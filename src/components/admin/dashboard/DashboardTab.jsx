@@ -349,9 +349,9 @@ function DashboardTab() {
             <div className="container mx-auto">
                 <div className="tab container mx-auto ">
                     <Tabs defaultIndex={0} className=" " >
-                        <TabList className="md:flex md:space-x-8 bg-  grid grid-cols-2 text-center gap-4   md:justify-center mb-10 ">
+                        <TabList className="flex justify-evenly flex-wrap mb-10 ">
                             <Tab>
-                                <button type="button" className="font-medium border-b-2 hover:shadow-black bg-orange-500 text-black rounded-lg text-xl shadow-[offset_0_0_8px_rgba(0,0,0,0.6)]  px-5 py-1.5 text-center bg-[#605d5d12] ">
+                                <button type="button" className=" font-medium border-b-2 hover:shadow-black bg-orange-500 text-black rounded-lg text-xl shadow-[offset_0_0_8px_rgba(0,0,0,0.6)]  px-5 py-1.5 text-center bg-[#605d5d12] ">
                                     <div className="flex gap-2 items-center">
                                         <MdOutlineProductionQuantityLimits />Products</div> </button>
                             </Tab>
@@ -362,7 +362,7 @@ function DashboardTab() {
                                     </div>
                                 </button>
                             </Tab>
-                            <Tab>
+                            <Tab className="mt-5 md:mt-0">
                                 <button type="button" className="font-medium border-b-2  hover:shadow-black bg-orange-200 text-black rounded-lg text-xl   shadow-[offset_0_0_8px_rgba(0,0,0,0.6)]   px-5 py-1.5 text-center ">
                                     <div className="flex gap-2 items-center">
                                         <FaUser /> Users

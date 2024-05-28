@@ -29,7 +29,7 @@ export default function Popularproducts2() {
   };
 
   return (
-    <div className="container px-10  m-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 relative" ref={containerRef}>
+    <div className="container px-2 md:px-10  m-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 relative" ref={containerRef}>
       <h2 className="text-center mb-5 font-bold text-4xl text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text mt-10">
         Best Selling Products
       </h2>

@@ -28,9 +28,9 @@ export default function Mystate(props) {
   const [product, setProduct] = useState([]);
   const [order, setOrder] = useState([]);
   const [user, setUser] = useState([]);
-  const [searchkey, setSearchkey] = useState([]);
-  const [filterType, setFilterType] = useState([]);
-  const [filterPrice, setFilterPrice] = useState([]);
+  const [searchkey, setSearchkey] = useState('');
+  const [filterType, setFilterType] = useState('');
+  const [filterPrice, setFilterPrice] = useState('');
 
   const toggleMode = () => {
     if (mode === 'light') {

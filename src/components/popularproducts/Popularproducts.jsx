@@ -29,7 +29,7 @@ export default function Popularproducts() {
   };
 
   return (
-    <div className="container px-10  m-auto" ref={containerRef}>
+    <div className="container px-2 md:px-10   m-auto" ref={containerRef}>
     
       <h2 className="text-center mb-5 font-bold text-4xl text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text mt-10">
         Popular Products
@@ -41,7 +41,7 @@ export default function Popularproducts() {
       )}
       <div data-aos="zoom-in-up" data-aos-duration="1000" className="container cursor-pointer grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {pro.map((product, index) => (
-          <div key={index} className="m-3 ml-2 border shadow rounded relative">
+          <div key={index} className="m-2 ml- border shadow rounded relative">
             <div  className="overflow-hidden rounded shadow-lg relative">
               <img
                 className="rounded shadow-lg hover:scale-125 transition-all w-full ease-in-out"

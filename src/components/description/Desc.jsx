@@ -48,10 +48,10 @@ export default function Desc() {
           )}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
             {/* image div */}
-            <div className="container p-4 mt-1">
-              <div className="overflow-hidden w-100 h-100">
+            <div className="container p-4 mt-1 overflow-hidden">
+              <div className="overflow-hidden">
                 <img
-                  className="w-full h-full cursor-pointer rounded hover:scale-150 hover:rounded transition-all ease-in-out duration-300"
+                  className="w-full h-full cursor-pointer rounded hover:scale-105 hover:rounded transition-all duration-300"
                   src={item.imageUrl}
                   alt="img"
                 />
@@ -74,7 +74,7 @@ export default function Desc() {
                 </span>
               </h3>
 
-              <div>y
+              <div>
                 <h2 className="ml-5 mt-3 text-transparent bg-gradient-to-br from-yellow-300 to-orange-400 bg-clip-text font-bold text-3xl">
                   {item.title}
                 </h2>
