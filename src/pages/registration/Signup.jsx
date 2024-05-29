@@ -1,7 +1,7 @@
 
 
 import { useContext, useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import myContext from '../../components/context/data/MyContext';
 import { toast } from 'react-toastify';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
@@ -15,6 +15,7 @@ function Signup() {
     const [email, setEmail] = useState("");
 
     const [password, setPassword] = useState("");
+    let navigate = useNavigate();
 
     const context = useContext(myContext);
     const { loading, setLoading } = context;
@@ -48,7 +49,7 @@ function Signup() {
                 autoClose: 800
               })
             setTimeout(() => {
-                window.location.href = '/login'
+               navigate= '/login'
             }, 400);
             setName("");
             setEmail("");

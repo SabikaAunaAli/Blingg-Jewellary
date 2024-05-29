@@ -5,8 +5,10 @@ import MyContext from './MyContext';
 import { Timestamp, addDoc, collection, deleteDoc, doc, getDocs, onSnapshot, orderBy, query, setDoc } from 'firebase/firestore';
 import { toast } from 'react-toastify';
 import { fireDB } from '../../../fireabase/FirebaseConfig';
+import { useNavigate } from 'react-router-dom';
 
 export default function Mystate(props) {
+  let navigate = useNavigate();
   const [mode, setMode] = useState('light');
   const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState({
@@ -72,7 +74,7 @@ export default function Mystate(props) {
       await addDoc(productRef, products);
       toast.success("Product added successfully");
       setTimeout(() => {
-        window.location.href = '/dashboard';
+        navigate = '/dashboard';
       }, 800);
       getProductData();
       setLoading(false);
@@ -118,7 +120,7 @@ export default function Mystate(props) {
       await setDoc(doc(fireDB, 'products', products.id), products);
       toast.success("Product updated successfully");
       setTimeout(() => {
-        window.location.href = '/dashboard';
+       navigate = '/dashboard';
       }, 800);
       getProductData();
       setLoading(false);

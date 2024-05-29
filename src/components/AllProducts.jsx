@@ -6,12 +6,13 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addToCart } from './store/cartslice'
 import { toast } from 'react-toastify'
 import Product from './Product'
+import { useNavigate } from 'react-router-dom'
 
 function Allproducts() {
   const context = useContext(myContext)
   const { mode, product ,searchkey, setSearchkey,filterType,setFilterType,
       filterPrice,setFilterPrice} = context
-
+      let navigate = useNavigate();
   const dispatch = useDispatch()
   const cartItems = useSelector((state)=> state.cart);
   console.log(cartItems)
@@ -60,7 +61,7 @@ function Allproducts() {
             const { title, price, description, imageUrl, id } = item;
             return (
                 <div
-                    onClick={() => (window.location.href = `/productinfo/${id}`)}
+                    onClick={() => ( navigate = `/productinfo/${id}`)}
                     key={index}
                     className="p-4 md:w-1/4 drop-shadow-lg"
                 >
