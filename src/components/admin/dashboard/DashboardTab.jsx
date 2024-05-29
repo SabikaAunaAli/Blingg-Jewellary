@@ -25,7 +25,7 @@ function DashboardTab() {
 
 
     const goToAdd = () => {
-        navigate = '/addproduct'
+        navigate ( '/addproduct')
     }
 
     return (

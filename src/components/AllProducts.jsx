@@ -61,7 +61,7 @@ function Allproducts() {
             const { title, price, description, imageUrl, id } = item;
             return (
                 <div
-                    onClick={() => ( navigate = `/productinfo/${id}`)}
+                    onClick={() => ( navigate ( `/productinfo/${id}`))}
                     key={index}
                     className="p-4 md:w-1/4 drop-shadow-lg"
                 >

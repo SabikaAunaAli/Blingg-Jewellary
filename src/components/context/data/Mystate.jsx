@@ -74,7 +74,7 @@ export default function Mystate(props) {
       await addDoc(productRef, products);
       toast.success("Product added successfully");
       setTimeout(() => {
-        navigate = '/dashboard';
+        navigate ( '/dashboard');
       }, 800);
       getProductData();
       setLoading(false);
@@ -120,7 +120,7 @@ export default function Mystate(props) {
       await setDoc(doc(fireDB, 'products', products.id), products);
       toast.success("Product updated successfully");
       setTimeout(() => {
-       navigate = '/dashboard';
+       navigate ('/dashboard');
       }, 800);
       getProductData();
       setLoading(false);

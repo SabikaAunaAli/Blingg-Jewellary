@@ -49,7 +49,7 @@ function Signup() {
                 autoClose: 800
               })
             setTimeout(() => {
-               navigate= '/login'
+               navigate('/login')
             }, 400);
             setName("");
             setEmail("");

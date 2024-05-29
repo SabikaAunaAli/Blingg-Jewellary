@@ -33,7 +33,7 @@ export default function Header() {
 
   const logout = () => {
     localStorage.clear('user');
-  navigate = '/signup'
+  navigate( '/signup')
   }
 
   return (
