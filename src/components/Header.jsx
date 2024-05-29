@@ -31,7 +31,7 @@
 
 //   const logout = () => {
 //     localStorage.clear('user');
-//     window.location.href = '/signup'
+//     navigate = '/signup'
 //   }
 
 //   return (
