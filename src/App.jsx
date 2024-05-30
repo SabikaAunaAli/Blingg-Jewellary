@@ -97,8 +97,8 @@ function App() {
               <Route path="*" element={<Pagenotfound />} />
 
             </Route>
-            <Route path='login' element={<Login />} />
-            <Route path='signup' element={<Signup />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/signup' element={<Signup />} />
             <Route path="/addproduct" element={
               <ProtectedRouteForAdmin>
                 <AddProduct />

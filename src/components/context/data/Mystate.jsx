@@ -8,7 +8,7 @@ import { fireDB } from '../../../fireabase/FirebaseConfig';
 import { useNavigate } from 'react-router-dom';
 
 export default function Mystate(props) {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
   const [mode, setMode] = useState('light');
   const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState({
